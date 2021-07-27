@@ -1,38 +1,278 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	margin: 0;
+	background-image: url(
+		'fs.jpg'
+		
+	);background-repeat: no-repeat;
+	background-position: right right
+	;
+	background-size: cover;
+	animation-name: example;
+  animation-duration: 4s;
+  
+	}
+	
+	p {
+		font-weight: 500;
+		color: rgb(202, 126, 196);
+		opacity: 0.7;
+		font-size: 3rem;
+		
+		margin-bottom: 60px;
+		text-shadow: 2px 2px 4px rgba(15, 66, 206, 0.2);
+	  }
+	.container {
+		position: absolute;
+		transform: translate(-50%,-50%);
+		top: 50%;
+		left: 50%;
+		display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	  }
+	  input {
+		
+		width: 200px;
+		
+		padding: 1em;
+		margin-bottom: 2em;
+		border: none;
+		border-left: 1px solid white;
+		border-top: 1px solid white;
+		border-radius: 5000px;
+		background: #f2f2f2;
+		box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+		color: rgb(202, 126, 196);
+		font-family: Montserrat, sans-serif;
+		font-weight: 500;
+		transition: all 0.2s ease-in-out;
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.2);}
+		div {
+			color: rgb(10, 10, 12);
+			font-size: 50px;
+			right: 2px;
+		}
+
+	
+label{
+	color:rgb(122, 122, 134);
+	font-size: 50px;
+	tab-size: 50px;
+	width:300px;
+  display: inline-block;
+  
+
+ }
+ 
+
+ 
+ form.Login {
+	background: rgba(134, 147, 206, 0.3);
+    padding: 10rem;
+    padding-top: 5em;
+    margin: 7rem;
+    margin-left: 10em;
+    height: 130px;
+    width: 5%;
+    border-radius: 225px;
+    border-right: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgb(0 0 0 / 20%);
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    position: relative;
 }
+ ::placeholder {
+	font-family: Montserrat, sans-serif;
+	font-weight: 300;
+	color: rgb(202, 126, 196);
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  }
+
+  .sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+	
+	padding: 20px;
+	position: top
+
+	;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+		 table{
+		border: 1px solid rgb(131, 127, 127);
+	  }
+	  th, td {
+		padding: 15px;
+		text-align: left;
+	  }
+	 /* body {
+		margin: 0;
+		font-family: Arial, Helvetica, sans-serif;
+	  }*/
+	 /* * {
+		margin: 0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	  }*/
+	  
+	  body.Nav {
+		font-family: "Montserrat", sans-serif;
+		margin-top: 4px;
+		position: absolute;
+		z-index: 100000;
+		top: 0;
+		left: 0px;
+	}
+	  
+	.navMenu {
+		position: relative;
+		top: 11px;
+		left: 29px;
+		height: 30px;
+		width: 100%;
+	}
+	  
+	.navMenu a {
+		color: #f6f4e6;
+		text-decoration: none;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		font-weight: 500;
+		display: block;
+		width: auto;
+		transition: all 0.2s ease-in-out;
+		white-space: pre-wrap;
+		position: relative;
+		float: left;
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 30px;
+	}
+	  
+	  .navMenu a:hover {
+		color: #d35eeb;
+	  }
+	  
+	  .navMenu .dot {
+		width: 6px;
+		height: 6px;
+		background: #d35eeb;
+		border-radius: 50%;
+		opacity: 0;
+		-webkit-transform: translateX(30px);
+		transform: translateX(30px);
+		-webkit-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	  }
+	  
+	  .navMenu a:nth-child(1):hover ~ .dot {
+		-webkit-transform: translateX(30px);
+		transform: translateX(30px);
+		-webkit-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		opacity: 1;
+	  }
+	  
+	  .navMenu a:nth-child(2):hover ~ .dot {
+		-webkit-transform: translateX(110px);
+		transform: translateX(110px);
+		-webkit-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		opacity: 1;
+	  }
+	  
+	  .navMenu a:nth-child(3):hover ~ .dot {
+		-webkit-transform: translateX(200px);
+		transform: translateX(200px);
+		-webkit-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		opacity: 1;
+	  }
+	  
+	  .navMenu a:nth-child(4):hover ~ .dot {
+		-webkit-transform: translateX(285px);
+		transform: translateX(285px);
+		-webkit-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		opacity: 1;
+	  }
+	  
+	  @media only screen and (max-width: 768px) {
+		/* For mobile phones: */
+		body {
+			font-family: 'Source Sans Pro', sans-serif;
+			padding: 0;
+			margin: 0;
+			background-image: url('mobile.jpeg');
+			background-repeat: no-repeat;
+			
+			background-attachment: fixed;
+	
+	  }
+	  form.Login {
+		background: rgba(134, 147, 206, 0.3);
+		padding: 10rem;
+		padding-top: 5em;
+		margin: 7rem;
+	
+		height: 130px;
+		width: 5%;
+		border-radius: 225px;
+		border-right: 1px solid rgba(255,255,255,0.3);
+		border-top: 1px solid rgba(255,255,255,0.3);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		box-shadow: 20px 20px 40px -6px rgb(0 0 0 / 20%);
+		transition: all 0.2s ease-in-out;
+		overflow: hidden;
+		position: relative;}}
+	
